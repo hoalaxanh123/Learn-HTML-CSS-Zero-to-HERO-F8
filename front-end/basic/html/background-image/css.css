@@ -1,0 +1,12 @@
+body {
+  background-image: linear-gradient(
+      0,
+      rgba(245, 58, 245, 0.6),
+      rgba(74, 243, 8, 0.6)
+    ),
+    url(https://cdn.pixabay.com/photo/2018/03/22/17/56/moe-3251269__480.png);
+  /* url(https://icdn.dantri.com.vn/thumb_w/640/2020/08/30/diem-danh-nhung-guong-mat-hot-girl-noi-bat-trong-thang-8-docx-1598788426579.jpeg); */
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 100vh;
+}

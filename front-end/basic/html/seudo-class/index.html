@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+
+<body>
+
+    <h2>Center</h2>
+    <div style="height: 200px; align-items: center; display: block;">
+        <h2>OMG</h2>
+    </div>
+
+    <h2>Pseudo elements</h2>
+    <div class="test-pseudo-elements">
+        <h3>Before - after</h3>
+        <h1 class="title">This is a real h1 element</h1>
+        <hr />
+        <h3>Selection</h3>
+        <section class="paragraph">
+            Insert content after every p elements
+            <br>
+            The second line
+        </section>
+    </div>
+
+    <h2>Required - optional - readonly - Disable</h2>
+    <div>
+        <form action="#" class="test-form-validate">
+            <h3>Form đăng ký đi ABC</h3>
+            <hr />
+            <label>Họ và tên đệm</label>
+            <input type="text" />
+            <label>Tên</label>
+            <input type="text" required />
+            <label>Số điện thoại</label>
+            <input type="text" required />
+            <label>Địa chỉ</label>
+            <input type="text" />
+            <label>Wibu?</label>
+            <input type="checkbox" checked disabled />
+            <label>Muốn xem ABC không?</label>
+            <input type="text" value="Có chứ" disabled />
+            <br />
+            <input type="button" value="Gửi đơn">
+        </form>
+    </div>
+
+    <h2>Not selector</h2>
+    <div class="test-not-selector">
+        <p>This is a p tag</p>
+        <label>This is a label</label>
+        <p>This is a p tag</p>
+        <label>This is a label</label>
+        <p>This is a p tag</p>
+    </div>
+
+    <h2>link-visited</h2>
+    <div class="test-visited">
+
+        <a href="fakepage.html" target="_bank" rel="noopener">
+            <h4>Come to see me!
+            </h4>
+        </a>
+    </div>
+
+    <h2>In range</h2>
+    <div>
+        <h3>Range: 1-10</h3>
+        <input class="test-in-range" type="number" min="0" max="10" required>
+        <h5 class="test-in-range"></h5>
+    </div>
+
+    <h2>Focus</h2>
+    <div>
+        <input class="test-focus" type="text" />
+        <h5 class="test-focus"></h5>
+    </div>
+
+    <h2>First child and last child</h2>
+    <ul class="test-first-last-child">
+        <li>Một</li>
+        <li>Hai</li>
+        <li>Ba</li>
+        <li>Bốn</li>
+    </ul>
+
+    <h2>Enable - Disable</h2>
+    <div>
+        <input class="test-disable" type="text" placeholder="Disabled" disabled>
+        <input class="test-disable" type="text" placeholder="Enabled">
+    </div>
+
+    <h2>Empty</h2>
+    <div class="empty">
+    </div>
+    <h2>active- kích hoạt khi nhấn chuột</h2>
+    <div class="test-active">
+        <p>Click and hole on me</p>
+    </div>
+
+    <h2>Checked</h2>
+    <div>
+        <input type="checkbox" class="test-checked">
+        <label>Are you gay?</label>
+
+    </div>
+
+    <h2>Disabled</h2>
+    <div>
+        <input type="checkbox" class="test-checked" disabled class="disabled-checkbox">
+        <label>Im not gay</label>
+    </div>
+
+</body>
+
+</html>

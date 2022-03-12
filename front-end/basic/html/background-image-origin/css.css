@@ -1,0 +1,22 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+div {
+  background: url(https://cdn.pixabay.com/photo/2018/03/22/17/56/moe-3251269__480.png)
+    no-repeat;
+  background-size: contain;
+  height: 400px;
+  width: 300px;
+
+  border: 30px dashed black;
+  padding: 20px;
+  margin: 20px;
+  box-sizing: border-box;
+
+  background-origin: padding-box;
+
+  /* margin-top: calc(100vh / 2-100px); */
+}

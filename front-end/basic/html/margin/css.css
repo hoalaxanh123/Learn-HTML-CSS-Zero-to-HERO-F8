@@ -1,0 +1,43 @@
+* {
+  margin: 5px;
+  padding: 0;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.container {
+  width: 480px;
+}
+.container .title {
+  font-size: 2rem;
+}
+.list-post {
+  margin-top: 32px;
+}
+
+.post .post-title {
+  font-size: 1.2rem;
+}
+
+.post {
+  margin-top: 30px;
+  border: 2px solid #ccc;
+  border-radius: 20px;
+  padding: 25px;
+  text-align: justify;
+  cursor: pointer;
+}
+.post:hover {
+  color: rgb(7, 161, 207);
+}
+.post .post-content {
+  margin-top: 16px;
+  font-size: 95%;
+  color: #444;
+}
+
+.post .last-post {
+  margin-top: 10px;
+  color: #666;
+  display: block;
+  font-style: inherit;
+}

@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+div {
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+div ~ p {
+  color: red;
+  font-size: 20px;
+}
+
+table td {
+  font-size: 20px;
+}
+
+.mot {
+  color: red;
+}
+.hai {
+  color: blue;
+}
+.mot.hai {
+  color: chartreuse;
+}
+
+.parent .child-1 {
+  background-color: blue;
+}
+.parent .child-2 {
+  background-color: aqua;
+}
+
+.container-1 + p {
+  color: red;
+}
+
+.container-1::before {
+  content: ".....";
+}
+.container-1::after {
+  content: ".....";
+}
+.container-1:fullscreen {
+  background-color: blue;
+}
+
+input,
+a {
+  display: block;
+  margin-top: 20px;
+  padding: 20px;
+  width: 200px;
+  border-radius: 20px;
+}
+a {
+  border: 1px solid black;
+  text-align: center;
+  font-size: xx-large;
+  text-decoration: dotted;
+  color: yellow;
+}
+a:link {
+  color: black;
+}
+a:visited {
+  color: blue;
+}
+input::before {
+  content: "Enter a number";
+}
+input:optional {
+  background-color: green;
+}
+
+input::placeholder {
+  background-color: blue;
+}
+
+input:invalid {
+  border: 5px solid red;
+  box-shadow: black;
+}
+input:valid {
+  border: 2px solid rgb(0, 255, 0);
+}
+input:invalid::after {
+  content: "This field is invalid";
+}
+
+ul::marker {
+  color: red;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  text-align: center;
+  background-color: rgba(167, 5, 48, 0.905);
+  height: 30px;
+  left: 0;
+  border-radius: 40px 40px 0px 00px;
+}
+.footer p {
+  color: rgb(201, 195, 13);
+  margin: 0.5rem;
+}
+.footer a {
+  display: inline;
+}

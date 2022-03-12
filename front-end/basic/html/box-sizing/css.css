@@ -1,0 +1,20 @@
+div {
+  cursor: pointer;
+  width: 180px;
+  height: 180px;
+  border: 10px solid transparent;
+  border-radius: 20px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+
+  padding: 20px;
+  margin-top: 20px;
+
+  background: linear-gradient(#ccc 0 0) padding-box,
+    /*this is your grey background*/ linear-gradient(to right, #9c20aa, #fb3570)
+      border-box;
+}
+.box-sizing {
+  box-sizing: border-box;
+}
