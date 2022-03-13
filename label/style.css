@@ -1,0 +1,40 @@
+section {
+  margin: 0 auto;
+  width: 500px;
+  border-radius: 20px;
+  border: 10px solid transparent;
+
+  padding: 40px;
+  box-sizing: border-box;
+
+  background: linear-gradient(#ccc 0 0) padding-box,
+    linear-gradient(to right, #9c20aa, #fb3570) border-box;
+}
+
+.title {
+  text-transform: uppercase;
+  text-align: center;
+  border: 1px dashed grey;
+  color: rgb(2, 16, 36);
+  border-radius: 20px;
+}
+.sub-title {
+  color: blue;
+}
+
+.note {
+  font-style: italic;
+  font-size: 0.8rem;
+  color: #444;
+}
+.note::before {
+  content: "Note: ";
+}
+.note b {
+  text-decoration: underline;
+}
+
+label {
+  box-sizing: border-box;
+  cursor: pointer;
+}

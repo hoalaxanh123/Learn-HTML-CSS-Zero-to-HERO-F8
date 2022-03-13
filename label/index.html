@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section>
+        <h1 class="title">Label with attr for</h1>
+
+        <h2 class="sub-title">NOT use attr for</h2>
+        <div>
+            <label>Are you gay?</label>
+            <input type="checkbox" id="check" />
+        </div>
+        <p class="note">You <b>CANNOT</b> check the box when clicking on the text</p>
+
+        <hr />
+        <h2 class="sub-title">Using for attr</h2>
+        <label>
+            Are you gay?
+            <input type="checkbox">
+        </label>
+
+        <br />
+        <br />
+
+        <div>
+            <label for="check-2">Are you gay?</label>
+            <input type="checkbox" id="check-2" />
+        </div>
+        <p class="note">You <b>CAN</b> check the box when clicking on the text</p>
+
+    </section>
+
+</body>
+
+</html>

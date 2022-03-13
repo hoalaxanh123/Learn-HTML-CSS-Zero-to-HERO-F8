@@ -1,0 +1,46 @@
+body {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.left,
+.left2,
+.right,
+.right2 {
+  height: 200px;
+  width: 300px;
+  padding: 10px;
+  margin: 20px;
+  display: flex;
+  align-items: center;
+
+  border-radius: 20px;
+  border: 8px solid transparent;
+  background: linear-gradient(#ccc 0 0) padding-box,
+    linear-gradient(to right, red, green) border-box;
+}
+img {
+  border-radius: 10px;
+  overflow: hidden;
+  max-width: 100%;
+  height: auto;
+}
+.left2,
+.right2 {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.left2 {
+  background-image: url(assets/tifa-background.jpg),
+    url(assets/background-error.jpg);
+}
+
+.right2 {
+  background-image: url(assets/ti2fa-background.jpg),
+    url(assets/background-error.jpg);
+}

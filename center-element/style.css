@@ -1,0 +1,98 @@
+/* ------------COMMON------------ */
+* {
+  margin: 0;
+  padding: 0;
+}
+p {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: large;
+  border: 1px dashed black;
+  border-radius: 10px;
+}
+h2 {
+  padding: 20px 0;
+}
+h2::before,
+h2::after {
+  display: block;
+  content: "----------------------------------------------------";
+}
+/* .test1::after,
+.test2::after,
+.test3::after,
+.test4::after {
+  display: block;
+  content: "-------------------------";
+} */
+div {
+  --line-height: 60px;
+  height: var(--line-height);
+  width: 300px;
+  border: 10px solid transparent;
+  border-radius: 20px;
+  background: linear-gradient(#ccc 0 0) padding-box,
+    linear-gradient(to right, red, green) border-box;
+  padding: 20px;
+  /* box-sizing: border-box; */
+}
+ul {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+/* Custom */
+.test1 {
+  text-align: center;
+  line-height: var(--line-height);
+}
+
+.test2 {
+  display: flex;
+}
+.test2 p {
+  padding: 10px;
+  margin: auto;
+}
+
+.test3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.test3 p {
+  padding: 20px;
+}
+
+.test4 p {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 50%;
+}
+.test5 a:hover {
+  color: #d50000;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: all 0.2s linear;
+  background-color: rgb(238, 255, 0);
+  box-sizing: border-box;
+}
+.test5 a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  position: relative;
+  padding: 0 5px;
+}
+.test5 {
+  height: 50px;
+}
+.test5 a::before {
+  position: absolute;
+  content: "";
+  border-left: 2px solid black;
+  height: 20px;
+  left: -2px;
+}
