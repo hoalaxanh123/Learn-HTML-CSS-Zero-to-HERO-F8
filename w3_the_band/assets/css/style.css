@@ -9,7 +9,11 @@
 }
 
 html {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "Lato", sans-serif;
+}
+
+.clear {
+    clear: both;
 }
 
 .main {
@@ -39,6 +43,7 @@ ul.navigator li {
     line-height: var(--header-height);
     cursor: pointer;
     position: relative;
+    font-size: 15px;
 }
 
 ul.sub-nav>li:hover>a,
@@ -167,9 +172,64 @@ ul.navigator>li>a {
     font-size: 16px;
 }
 
-.content {
-    height: 1000px;
-    background-color: aqua;
+.content {}
+
+.content .section {
+    padding: 80px 16px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.content .section-1 {
+    max-width: 800px;
+}
+
+.content .section .section-heading {
+    letter-spacing: 3px;
+    font-weight: 450;
+    text-align: center;
+    padding: 20px 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 30px;
+}
+
+.content .section .section-sub-heading {
+    opacity: 0.7;
+    text-align: center;
+    font-size: 15px;
+    font-family: "Lato", sans-serif;
+    margin: 15px 0;
+    font-style: italic;
+}
+
+.content .section-1 .section-content {
+    text-align: justify;
+    line-height: 1.4;
+    font-size: 15px;
+    margin: 15px 0;
+}
+
+.content .member-list {
+    text-align: center;
+    padding: 32px 0;
+    display: inline-table;
+}
+
+.content .member-item {
+    float: left;
+}
+
+.content .member-item .member-name {
+    margin: 15px 0;
+}
+
+.content .member-item .member-avatar {
+    width: 60%;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
 }
 
 .footer {}
