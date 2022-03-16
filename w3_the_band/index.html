@@ -4,10 +4,12 @@
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="wclassth=device-wclassth, initial-scale=1.0" />
-    <title>W3-The Band - Clone</title>
+    <title>The Band</title>
+    <link rel="stylesheet" href="./assets/css/animations.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/themify-icons-font/themify-icons.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato" />
+    <link rel="shortcut icon" type="image/jpg" href="./assets/img/fav.ico" />
 </head>
 
 <body>
@@ -35,8 +37,8 @@
                         <label for="search-input" class="for"></label>
 
                         <button class="search-submit">
-                <i class="ti-search"></i>
-              </button>
+                            <i class="ti-search"></i>
+                        </button>
                     </form>
                 </div>
             </div>
@@ -50,33 +52,94 @@
         </div>
 
         <div class="content">
-            <div class="section section-1">
-                <p class="section-heading">THE BAND</p>
-                <p class="section-sub-heading">We love music</p>
-                <p class="section-content">
-                    We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-                    ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-                    consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
-                <div class="member-list">
-                    <div class="member-item">
-                        <p class="member-name">Name</p>
-                        <img src="./assets/img/bandmember.jpg" alt="band member" class="member-avatar" />
-                    </div>
-                    <div class="member-item">
-                        <p class="member-name">Name</p>
-                        <img src="./assets/img/bandmember.jpg" alt="band member" class="member-avatar" />
-                    </div>
-                    <div class="member-item">
-                        <p class="member-name">Name</p>
-                        <img src="./assets/img/bandmember.jpg" alt="band member" class="member-avatar" />
+            <div class="wrapper-section">
+                <div class="section">
+                    <p class="section-heading">THE BAND</p>
+                    <p class="section-sub-heading">We love music</p>
+                    <p class="section-content">
+                        We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                        ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                        laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                    <div class="member-list">
+                        <div class="member-item">
+                            <p class="member-name">Name</p>
+                            <img src="./assets/img/bandmember.jpg" alt="band member" class="member-avatar" />
+                        </div>
+                        <div class="member-item">
+                            <p class="member-name">Name</p>
+                            <img src="./assets/img/bandmember.jpg" alt="band member" class="member-avatar" />
+                        </div>
+                        <div class="member-item">
+                            <p class="member-name">Name</p>
+                            <img src="./assets/img/bandmember.jpg" alt="band member" class="member-avatar" />
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="section section-2">
-                <p class="section-heading">TOUR DATES</p>
-                <p class="section-sub-heading">Remember to book your tickets!</p>
+            <div class="wrapper-section background-black">
+                <div class="section section-2">
+                    <p class="section-heading white">TOUR DATES</p>
+                    <p class="section-sub-heading white">
+                        Remember to book your tickets!
+                    </p>
+
+                    <ul class="list-ticket">
+                        <li class="ticket-detail">
+                            September
+                            <p class="ticket-sold-out">Sold out</p>
+                        </li>
+                        <li class="ticket-detail">
+                            October
+                            <p class="ticket-sold-out">Sold out</p>
+                        </li>
+                        <li class="ticket-detail">
+                            November
+                            <p id="ticket-left" class="ticket-sold-in">3</p>
+                        </li>
+                    </ul>
+
+                    <div class="list-location">
+                        <div class="location-detail">
+                            <img src="./assets/img/locations/new-york.jpg" alt="" class="img-location" />
+                            <div class="detail-wrapper">
+                                <h3 class="location-name">New York</h3>
+                                <p class="start-date">Fri 27 Nov 2016</p>
+                                <p class="description">
+                                    Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+                                </p>
+                                <button class="buy-ticket">Buy Tickets</button>
+                            </div>
+                        </div>
+
+                        <div class="location-detail">
+                            <img src="./assets/img/locations/paris.jpg" alt="" class="img-location" />
+                            <div class="detail-wrapper">
+                                <h3 class="location-name">New York</h3>
+                                <p class="start-date">Fri 27 Nov 2016</p>
+                                <p class="description">
+                                    Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+                                </p>
+                                <button class="buy-ticket">Buy Tickets</button>
+                            </div>
+                        </div>
+
+                        <div class="location-detail">
+                            <img src="./assets/img/locations/sanfran.jpg" alt="" class="img-location" />
+                            <div class="detail-wrapper">
+                                <h3 class="location-name">New York</h3>
+                                <p class="start-date">Fri 27 Nov 2016</p>
+                                <p class="description">
+                                    Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+                                </p>
+                                <button class="buy-ticket">Buy Tickets</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="clear"></div>
+                </div>
             </div>
 
             <div class="section section-1">
@@ -87,6 +150,45 @@
 
         <div class="footer"></div>
     </div>
+
+    <div class="modal modal-close">
+        <div class="modal-container">
+            <header class="modal-header">
+                <i class="ti-close modal-close-btn"></i>
+                <h4 class="modal-title"><i class="ti-ticket"></i>Tickets</h4>
+            </header>
+            <div class="modal-body">
+                <form>
+                    <div class="modal-form-row">
+                        <label for="ticket-quantity-buy">
+                            <i class="ti-shopping-cart labe-icon"></i>
+                            Tickets, $15 per person
+                        </label>
+                        <input required min="1" max="10" value="0" type="number" id="ticket-quantity-buy" class="modal-input" placeholder="How many" />
+                    </div>
+
+                    <div class="modal-form-row">
+                        <label for="buy-ticket-email">
+                            <i class="ti-user labe-icon"> </i>
+                            Send To
+                        </label>
+                        <input required type="email" id="buy-ticket-email" class="modal-input" placeholder="example@example.com" />
+                    </div>
+
+                    <div class="modal-form-row">
+                        <button type="submit" class="modal-submit" onclick="buyTicket()">
+                            Pay<i class="ti-check"></i>
+                        </button>
+                    </div>
+                </form>
+                <div class="modal-footer">
+                    <p class="modal-help">Need <a href="#">help?</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/javascript.js"></script>
 </body>
 
 </html>
