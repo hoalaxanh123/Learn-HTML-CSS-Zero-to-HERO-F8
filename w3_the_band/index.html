@@ -2,14 +2,18 @@
 <html lang="en">
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>The Band</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="shortcut icon" type="image/jpg" href="./assets/img/fav.ico" />
+
     <link rel="stylesheet" href="./assets/css/animations.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/mobile.css" />
     <link rel="stylesheet" href="./assets/themify-icons-font/themify-icons.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato" />
-    <link rel="shortcut icon" type="image/jpg" href="./assets/img/fav.ico" />
 </head>
 
 <body>
@@ -17,9 +21,9 @@
         <div class="header">
             <ul class="navigator">
                 <li><a href="#">HOME</a></li>
-                <li><a href="#">Band</a></li>
-                <li><a href="#">Tour</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#introduce">Band</a></li>
+                <li><a href="#tour-date">Tour</a></li>
+                <li><a href="#contact">Contact</a></li>
                 <li>
                     <a href="#">More <i class="nav-arrow-down ti-angle-down"></i></a>
                     <ul class="sub-nav">
@@ -33,8 +37,7 @@
             <div class="header-search">
                 <div class="header-search-input">
                     <form action="#">
-                        <input class="search-input" type="text" placeholder="Type something here..." />
-                        <label for="search-input" class="for"></label>
+                        <input class="search-input" type="text" placeholder="Looking something?" />
 
                         <button class="search-submit">
                             <i class="ti-search"></i>
@@ -42,9 +45,12 @@
                     </form>
                 </div>
             </div>
+            <div class="mobile-menu-switcher">
+                <i class="ti-menu"></i>
+            </div>
         </div>
 
-        <div class="slider">
+        <div id="home" class="slider">
             <div class="text-area">
                 <h2 class="title">New York</h2>
                 <p class="description">The atmosphere in New York is lorem ipsum.</p>
@@ -52,7 +58,9 @@
         </div>
 
         <div class="content">
-            <div class="wrapper-section">
+
+            <!-- Introduce -->
+            <div id="introduce" class="wrapper-section">
                 <div class="section">
                     <p class="section-heading">THE BAND</p>
                     <p class="section-sub-heading">We love music</p>
@@ -61,16 +69,16 @@
                         ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
                         laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                     </p>
-                    <div class="member-list">
-                        <div class="member-item">
+                    <div class="row member-list">
+                        <div class="col col-third member-item">
                             <p class="member-name">Name</p>
                             <img src="./assets/img/bandmember.jpg" alt="band member" class="member-avatar" />
                         </div>
-                        <div class="member-item">
+                        <div class="col col-third member-item">
                             <p class="member-name">Name</p>
                             <img src="./assets/img/bandmember.jpg" alt="band member" class="member-avatar" />
                         </div>
-                        <div class="member-item">
+                        <div class="col col-third member-item">
                             <p class="member-name">Name</p>
                             <img src="./assets/img/bandmember.jpg" alt="band member" class="member-avatar" />
                         </div>
@@ -78,8 +86,9 @@
                 </div>
             </div>
 
-            <div class="wrapper-section background-black">
-                <div class="section section-2">
+            <!-- Tour dates -->
+            <div id="tour-date" class="wrapper-section background-black">
+                <div class="section">
                     <p class="section-heading white">TOUR DATES</p>
                     <p class="section-sub-heading white">
                         Remember to book your tickets!
@@ -100,8 +109,8 @@
                         </li>
                     </ul>
 
-                    <div class="list-location">
-                        <div class="location-detail">
+                    <div class="row list-location">
+                        <div class="col col-third location-detail">
                             <img src="./assets/img/locations/new-york.jpg" alt="" class="img-location" />
                             <div class="detail-wrapper">
                                 <h3 class="location-name">New York</h3>
@@ -109,11 +118,11 @@
                                 <p class="description">
                                     Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                                 </p>
-                                <button class="buy-ticket">Buy Tickets</button>
+                                <button class="btn buy-ticket ">Buy Tickets</button>
                             </div>
                         </div>
 
-                        <div class="location-detail">
+                        <div class="col col-third location-detail">
                             <img src="./assets/img/locations/paris.jpg" alt="" class="img-location" />
                             <div class="detail-wrapper">
                                 <h3 class="location-name">New York</h3>
@@ -121,11 +130,11 @@
                                 <p class="description">
                                     Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                                 </p>
-                                <button class="buy-ticket">Buy Tickets</button>
+                                <button class="btn buy-ticket ">Buy Tickets</button>
                             </div>
                         </div>
 
-                        <div class="location-detail">
+                        <div class="col col-third location-detail">
                             <img src="./assets/img/locations/sanfran.jpg" alt="" class="img-location" />
                             <div class="detail-wrapper">
                                 <h3 class="location-name">New York</h3>
@@ -133,22 +142,73 @@
                                 <p class="description">
                                     Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                                 </p>
-                                <button class="buy-ticket">Buy Tickets</button>
+                                <button class="btn buy-ticket ">Buy Tickets</button>
                             </div>
                         </div>
                     </div>
 
-                    <div class="clear"></div>
                 </div>
             </div>
 
-            <div class="section section-1">
-                <p class="section-heading">CONTACT</p>
-                <p class="section-sub-heading">Fan? Drop a note!</p>
+            <!-- Contact -->
+            <div id="contact" class="wrapper-section">
+                <div class="section">
+                    <p class="section-heading">CONTACT</p>
+                    <p class="section-sub-heading">Fan? Drop a note!</p>
+
+                    <div class="row contact-wrapper">
+                        <div class="col col-half contact-detail">
+                            <p><i class="ti-location-pin"></i> Location</p>
+                            <p><i class="ti-mobile"></i> Phone: +00 151515</p>
+                            <p><i class="ti-email"></i> Email: mail@mail.com
+                            </p>
+                        </div>
+                        <div class="col col-half">
+                            <form action="#" class="contact-form">
+                                <div class="row">
+                                    <div class="col col-half">
+                                        <input required type="text" placeholder="Name" />
+                                    </div>
+                                    <div class="col col-half">
+                                        <input required type="email" placeholder="Email" />
+                                    </div>
+                                </div>
+                                <div class="row  mt-8">
+                                    <div class="col col-full">
+                                        <input required type="text" placeholder="Message" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col col-full contact-submit">
+                                        <button type="submit" class="btn contact-submit-btn ">SEND</button>
+
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div id="map" class="wrapper-section">
+                <img src="./assets/img/map.jpg" class="w3-image w3-greyscale-min" style="width:100%">
             </div>
         </div>
 
-        <div class="footer"></div>
+        <div class="footer">
+            <div class="list-social">
+                <a href="#"><i class="ti-facebook"></i></a>
+                <a href="#"><i class="ti-instagram"></i></a>
+                <a href="#"><i class="ti-youtube"></i></a>
+                <a href="#"><i class="ti-pinterest"></i></a>
+                <a href="#"><i class="ti-twitter"></i></a>
+                <a href="#"><i class="ti-facebook"></i></a>
+                <a href="#"><i class="ti-linkedin"></i></a>
+
+            </div>
+            <p>Copyright @W3 School, Vuong Nguyen.</p>
+        </div>
     </div>
 
     <div class="modal modal-close">
@@ -188,7 +248,7 @@
         </div>
     </div>
 
-    <script src="./assets/javascript.js"></script>
+    <script src="./assets/javascript/javascript.js"></script>
 </body>
 
 </html>

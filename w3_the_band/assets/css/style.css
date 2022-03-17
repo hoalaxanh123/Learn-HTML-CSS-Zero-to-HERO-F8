@@ -4,27 +4,86 @@
     box-sizing: border-box;
 }
 
+
+/* ============COMMON============ */
+
 :root {
     --header-height: 46px;
+}
+
+.white {
+    color: #fff !important;
 }
 
 html {
     font-family: "Lato", sans-serif;
     font-size: 16px;
     line-height: 1.5;
-}
-
-.white {
-    color: #fff;
+    scroll-behavior: smooth;
 }
 
 .background-black {
     background-color: #000 !important;
 }
 
-.clear {
+.mt-8 {
+    margin-top: 8px !important;
+}
+
+.mt-16 {
+    margin-top: 16px !important;
+}
+
+.row {
+    margin: 0 -8px;
+}
+
+.row::after {
+    content: "";
+    display: block;
     clear: both;
 }
+
+.col {
+    float: left;
+    padding: 0 8px;
+}
+
+.col-full {
+    width: 100%;
+}
+
+.col-half {
+    width: 50%;
+}
+
+.col-third {
+    width: 33.33333%;
+}
+
+.btn {
+    background: #000;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    transition: all 0.2s linear;
+}
+
+.btn:hover {
+    background: #ccc;
+    color: #000;
+}
+
+.height-auto {
+    height: auto !important;
+    animation: anim-mobile-menu 0.8s ease;
+    -webkit-animation: anim-mobile-menu 0.8s ease;
+}
+
+
+/* ============MAIN============ */
 
 .main {
     width: 100%;
@@ -38,11 +97,18 @@ html {
     top: 0;
     left: 0;
     right: 0;
+    z-index: 10;
 }
 
 ul.navigator {
     display: inline-block;
     font-weight: 580;
+}
+
+ul.navigator::after {
+    content: "";
+    display: block;
+    clear: both;
 }
 
 ul.navigator .nav-arrow-down {
@@ -107,34 +173,44 @@ ul.navigator>li>a {
     -o-transition: 0.2s ease-out;
 }
 
+.header .mobile-menu-switcher,
 .header-search {
-    height: 100%;
+    height: var(--header-height);
     float: right;
     padding: 0 10px;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: right;
+    position: absolute;
+    right: 0;
+    top: 0;
 }
 
 .header-search .search-input {
+    display: inline-block;
     outline: none;
     border: 1px solid #ccc;
     border-radius: 20px;
     padding: 3.5px 20px;
-    max-width: 180px;
+    max-width: 150px;
+    width: 80%;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
     height: 100%;
+    font-size: 10px;
 }
 
 .header-search .search-input:focus {
     border: 3px solid rgb(4, 247, 12);
     box-shadow: 0 4px 10px 0 rgba(154, 248, 3, 0.2), 0 4px 20px 0 rgba(208, 253, 5, 0.19);
+    font-size: inherit;
 }
 
 .header-search .search-submit {
+    display: inline-block;
     padding: 0 20px;
     border: 1px solid transparent;
     background-color: transparent;
@@ -166,7 +242,7 @@ ul.navigator>li>a {
 
 .slider {
     position: relative;
-    margin-top: calc(var(--header-height) + 1px);
+    margin-top: var(--header-height);
     background: url(../img/slider/slider1.jpg) top center / cover no-repeat;
     padding-top: 50%;
 }
@@ -207,7 +283,7 @@ ul.navigator>li>a {
     letter-spacing: 3px;
     font-weight: 450;
     text-align: center;
-    padding: 20px 0;
+    margin-top: 20px;
     font-family: "Segoe UI", Arial, sans-serif;
     font-size: 30px;
 }
@@ -229,11 +305,6 @@ ul.navigator>li>a {
 .content .member-list {
     text-align: center;
     padding: 32px 0;
-    display: inline-table;
-}
-
-.content .member-item {
-    float: left;
 }
 
 .content .member-item .member-name {
@@ -247,11 +318,6 @@ ul.navigator>li>a {
     -moz-border-radius: 4px;
     -ms-border-radius: 4px;
     -o-border-radius: 4px;
-}
-
-.content .section-2 {
-    background-color: #000;
-    max-width: 800px;
 }
 
 .content .list-ticket {
@@ -290,14 +356,11 @@ ul.navigator>li>a {
 
 .content .list-location {
     padding: 32px 0 80px 0;
-    margin: 0px -10px;
 }
 
 .content .list-location .location-detail {
     border: 1px solid black;
-    float: left;
-    width: 33.33333%;
-    padding: 0 8px 50px 8px;
+    padding-bottom: 50px;
 }
 
 .content .location-detail img {
@@ -329,19 +392,9 @@ ul.navigator>li>a {
 .content .detail-wrapper .buy-ticket {
     margin-top: 15px;
     color: #fff;
-    background-color: #000;
     padding: 8px 16px;
     display: inline-block;
     text-decoration: none;
-    outline: none;
-    border: none;
-    cursor: pointer;
-}
-
-.content .detail-wrapper .buy-ticket:hover {
-    color: #000;
-    background-color: #ccc;
-    color: #000;
 }
 
 .modal {
@@ -457,4 +510,59 @@ input,
     margin: 15px 0;
 }
 
-.footer {}
+.contact-wrapper {
+    padding: 32px 0;
+}
+
+.contact-detail i {
+    width: 30px;
+    display: inline-block;
+}
+
+.contact-detail {
+    line-height: 1.5;
+    font-size: 18px;
+}
+
+.contact-form input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 16px;
+}
+
+.contact-form .contact-submit {
+    text-align: end;
+}
+
+.contact-form .contact-submit-btn {
+    margin: 16px;
+    padding: 8px 16px;
+}
+
+.footer {
+    padding: 64px 16px;
+    text-align: center;
+}
+
+.footer .list-social a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 20px;
+    display: inline-block;
+    transition: all 0.2s linear;
+}
+
+.footer .list-social a:hover {
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 22px;
+}
+
+.footer p {
+    padding: 20px 0;
+    font-size: 0.9rem;
+    font-style: italic;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.5);
+}

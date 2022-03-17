@@ -1,3 +1,35 @@
+let isOpeningMenu = false
+
+
+const navItems = document.querySelectorAll(".navigator li a")
+console.log('navItems :>> ', navItems);
+
+
+navItems.forEach(element => {
+    element.addEventListener("click", () => {
+        if (header.classList.contains("height-auto")) {
+            header.classList.remove("height-auto")
+        }
+    })
+});
+
+
+
+const switcherMobileMenu = document.querySelector(".mobile-menu-switcher")
+const header = document.querySelector(".header")
+
+switcherMobileMenu.addEventListener("click", () => {
+
+    if (header.classList.contains("height-auto")) {
+        header.classList.remove("height-auto")
+    } else {
+        header.classList.add("height-auto")
+    }
+    isOpeningMenu = !isOpeningMenu;
+
+})
+
+
 let ticketLeft = localStorage.getItem("ticket-left")
 if (!ticketLeft) {
     localStorage.setItem("ticket-left", 10)

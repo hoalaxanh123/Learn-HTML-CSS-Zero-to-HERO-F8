@@ -1,0 +1,26 @@
+@media (max-width: 740px) {
+    .header-search {
+        display: none;
+    }
+    .header {
+        overflow: hidden;
+    }
+    .header .mobile-menu-switcher {
+        color: white;
+        cursor: pointer;
+        padding: 0 18px !important;
+    }
+    .header .mobile-menu-switcher:hover {
+        background: rgba(255, 255, 255, .5);
+    }
+    ul.navigator {
+        width: 100%;
+    }
+    ul.navigator li:first-child {
+        width: max-content;
+    }
+    ul.navigator li {
+        display: block;
+        width: 100%;
+    }
+}
