@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 
-
 /* ============COMMON============ */
 
 :root {
@@ -85,7 +84,6 @@ html {
     animation: anim-mobile-menu 0.8s ease;
     -webkit-animation: anim-mobile-menu 0.8s ease;
 }
-
 
 /* ============MAIN============ */
 
@@ -219,7 +217,8 @@ ul.navigator .sub-nav>li>a {
 
 .header-search .search-input:focus {
     border: 3px solid rgb(4, 247, 12);
-    box-shadow: 0 4px 10px 0 rgba(154, 248, 3, 0.2), 0 4px 20px 0 rgba(208, 253, 5, 0.19);
+    box-shadow: 0 4px 10px 0 rgba(154, 248, 3, 0.2),
+        0 4px 20px 0 rgba(208, 253, 5, 0.19);
     font-size: inherit;
 }
 
@@ -271,9 +270,7 @@ ul.navigator .sub-nav>li>a {
     text-align: center;
     padding: 32px;
     background: rgba(0, 0, 0, 0.5);
-
 }
-
 
 .slider .text-area .title {
     font-size: 24px;

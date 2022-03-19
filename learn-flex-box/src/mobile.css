@@ -1,0 +1,81 @@
+@media screen and (max-width: 739px) {
+    body {
+        background-color: red !important;
+        padding: 0 10px;
+    }
+
+    div {
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+    }
+
+    .nav .nav-list li {
+        padding: 10px 5px;
+    }
+
+    .nav .nav-list {
+        padding-left: 0;
+        margin: auto 15px;
+    }
+
+    .s-text-left {
+        text-align: left;
+    }
+
+    .s-text-right {
+        text-align: right;
+    }
+
+    .s-text-center {
+        text-align: center;
+    }
+
+    .form__row {
+        padding: 18px 0;
+    }
+
+    .form__label,
+    .form__input {
+        padding: 12px 10px;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+    }
+
+    .the-end,
+    .feature-layout,
+    .column-layout {
+        flex-direction: column;
+    }
+
+    .column-item {
+        padding-bottom: 30px;
+    }
+
+    .column-item h2 {
+        margin: 10px 0;
+    }
+
+    .column-item p {
+        padding: 0;
+        margin: 0;
+    }
+
+    .chart-layout {
+        width: 150%;
+
+    }
+
+    .chart-layout .chart-layout__item {
+        margin: 0 5px;
+    }
+
+    .the-end .the-end__first, .the-end.the-end__second, .the-end .the-end__second div {
+        margin: 10px 0;
+    }
+}
