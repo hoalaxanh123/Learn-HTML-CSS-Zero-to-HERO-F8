@@ -197,6 +197,10 @@ ul.navigator .sub-nav>li>a {
     top: 0;
 }
 
+.header .mobile-menu-switcher {
+    display: none;
+}
+
 .header-search .search-input {
     display: inline-block;
     outline: none;
@@ -266,15 +270,20 @@ ul.navigator .sub-nav>li>a {
     color: #fff;
     text-align: center;
     padding: 32px;
+    background: rgba(0, 0, 0, 0.5);
+
 }
+
 
 .slider .text-area .title {
     font-size: 24px;
+    text-shadow: 0 0 1px black;
 }
 
 .slider .text-area .description {
     margin-top: 24px;
     font-size: 16px;
+    text-shadow: 0 0 1px black;
 }
 
 .content {}

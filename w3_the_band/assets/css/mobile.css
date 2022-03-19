@@ -1,4 +1,4 @@
-@media (max-width: 1023px) {
+@media (max-width: 63.9375em) {
     .content .detail-wrapper .buy-ticket {
         padding-top: 13px;
         padding-bottom: 13px;
@@ -31,7 +31,7 @@
 }
 
 
-@media (max-width: 740px) {
+@media (max-width: 46.1875em) {
     .s-full-width {
         width: 100% !important;
     }
@@ -58,6 +58,7 @@
         color: white;
         cursor: pointer;
         padding: 0 18px !important;
+        display: flex;
     }
 
     .header .mobile-menu-switcher:hover {
