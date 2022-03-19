@@ -2,14 +2,20 @@ let isOpeningMenu = false
 
 
 const navItems = document.querySelectorAll(".navigator li a")
-console.log('navItems :>> ', navItems);
 
 
 navItems.forEach(element => {
-    element.addEventListener("click", () => {
-        if (header.classList.contains("height-auto")) {
-            header.classList.remove("height-auto")
+    let isSubnavSwitcher = element.nextElementSibling && element.nextElementSibling.classList.contains("sub-nav")
+
+    element.addEventListener("click", (event) => {
+        if (isSubnavSwitcher) {
+            event.preventDefault()
+        } else {
+            if (header.classList.contains("height-auto")) {
+                header.classList.remove("height-auto")
+            }
         }
+
     })
 });
 
@@ -49,7 +55,7 @@ const openModal = () => {
 };
 const buyTicket = () => {
     if (ticketLeft > 0) {
-        alert('Thank you so much')
+        alert('Thank you so much !')
         ticketLeft = ticketLeft - 1
         localStorage.setItem("ticket-left", ticketLeft)
     } else {

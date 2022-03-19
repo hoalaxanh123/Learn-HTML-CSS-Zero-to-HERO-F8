@@ -69,6 +69,10 @@ html {
     cursor: pointer;
     font-size: 15px;
     transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -ms-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
 }
 
 .btn:hover {
@@ -134,6 +138,7 @@ ul.navigator>li:hover>.sub-nav {
     display: block;
 }
 
+ul.navigator .sub-nav>li>a,
 ul.navigator>li>a {
     text-decoration: none;
     text-transform: uppercase;
@@ -176,7 +181,6 @@ ul.navigator>li>a {
 .header .mobile-menu-switcher,
 .header-search {
     height: var(--header-height);
-    float: right;
     padding: 0 10px;
     display: flex;
     justify-content: center;
@@ -241,10 +245,12 @@ ul.navigator>li>a {
 }
 
 .slider {
-    position: relative;
     margin-top: var(--header-height);
-    background: url(../img/slider/slider1.jpg) top center / cover no-repeat;
-    padding-top: 50%;
+    position: relative;
+}
+
+.slider img {
+    width: 100%;
 }
 
 .slider .text-area {
