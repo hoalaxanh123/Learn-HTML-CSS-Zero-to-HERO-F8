@@ -2,62 +2,78 @@
     .s-full-width {
         width: 100% !important;
     }
+
     .btn {
         width: 100%;
         padding: 20px 0 !important;
         font-size: 16px;
     }
+
     .header-search {
         display: none;
     }
+
     .header {
         overflow: hidden;
     }
+
     .header .mobile-menu-switcher {
         color: white;
         cursor: pointer;
         padding: 0 18px !important;
     }
+
     .header .mobile-menu-switcher:hover {
         background: rgba(255, 255, 255, 0.5);
     }
+
     ul.navigator {
         width: 100%;
     }
+
     ul.navigator li:first-child {
         width: max-content;
     }
+
     ul.navigator li {
         display: block;
         width: 100%;
     }
+
     .header .sub-nav {
         position: initial;
         padding: 20px 20px;
         background-color: #000;
     }
+
     ul.navigator .sub-nav>li>a {
         text-transform: initial;
         font-weight: 300;
     }
+
     ul.navigator .sub-nav>li {
         width: 100%;
     }
+
     ul.navigator>li>a,
     ul.navigator .sub-nav>li>a {
         padding-top: 20px;
         padding-bottom: 20px;
     }
+
     .slider .text-area {
         display: none;
     }
+
     .contact-form {
         padding: 20px 0;
     }
+
     .contact-form input {
         margin: 2px 0;
         padding: 15px 10px;
     }
+
     .contact-form .contact-submit-btn {
         margin: 10px 0;
     }
