@@ -164,6 +164,7 @@ body {
     justify-content: space-evenly;
     align-items: flex-end;
     overflow-x: auto;
+    max-width: 100%;
 }
 
 .chart-layout__item {
