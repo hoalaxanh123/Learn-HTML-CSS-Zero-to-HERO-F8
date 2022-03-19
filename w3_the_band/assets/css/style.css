@@ -149,6 +149,12 @@ ul.navigator>li>a {
     line-height: 100%;
 }
 
+ul.navigator .sub-nav>li>a {
+    color: #000;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
 .sub-nav {
     display: none;
     position: absolute;
@@ -525,6 +531,16 @@ input,
     display: inline-block;
 }
 
+.contact-detail a {
+    opacity: 0.8;
+    text-decoration: none;
+}
+
+.contact-detail a:hover {
+    opacity: 1;
+    font-weight: bolder;
+}
+
 .contact-detail {
     line-height: 1.5;
     font-size: 18px;
@@ -543,13 +559,21 @@ input,
 }
 
 .contact-form .contact-submit-btn {
-    margin: 16px;
+    margin: 16px 0;
     padding: 8px 16px;
 }
 
 .footer {
     padding: 64px 16px;
     text-align: center;
+}
+
+.footer>p>a {
+    text-decoration: none;
+}
+
+.footer>p>a:hover {
+    font-weight: bolder;
 }
 
 .footer .list-social a {
