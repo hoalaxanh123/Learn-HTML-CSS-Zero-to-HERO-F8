@@ -1,0 +1,78 @@
+body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.container {
+    padding: 20px 0;
+}
+
+.btn {
+    min-width: 50px;
+    display: inline-block !important;
+    background-color: blue;
+    padding: 15px 40px;
+    border-radius: 50px;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    border: 0px solid transparent;
+    transition: opacity 0.2S linear;
+    text-decoration: none;
+    box-shadow: 3px 3px 2px #00000078;
+
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    -webkit-transition: opacity 0.2S linear;
+    -moz-transition: opacity 0.2S linear;
+    -ms-transition: opacity 0.2S linear;
+    -o-transition: opacity 0.2S linear;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.btn:active {
+    opacity: 0.9;
+    transform: translateY(2px);
+    -webkit-transform: translateY(2px);
+    -moz-transform: translateY(2px);
+    -ms-transform: translateY(2px);
+    -o-transform: translateY(2px);
+    box-shadow: 1px 1px 2px #00000078;
+}
+
+.btn--primary {
+    background-color: blue !important;
+}
+
+.btn--warning {
+    background-color: rgb(232, 232, 4) !important;
+}
+
+.btn--danger {
+    background-color: red !important;
+}
+
+.btn--size--s {
+    padding: 10px 30px;
+}
+
+.btn--size--m {
+    padding: 15px 40px;
+}
+
+.btn--size--l {
+    padding: 20px 50px;
+}
+
+.btn+.btn {
+    margin-left: 30px;
+}

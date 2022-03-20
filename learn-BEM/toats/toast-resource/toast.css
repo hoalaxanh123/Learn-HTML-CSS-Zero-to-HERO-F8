@@ -1,0 +1,109 @@
+:root {
+    --success-color: green;
+    --warning-color: rgb(167, 167, 5);
+    --error-color: rgb(133, 5, 5);
+    --info-color: rgb(4, 28, 165);
+}
+
+#toast {
+    position: fixed;
+    right: 32px;
+}
+
+.toast {
+    z-index: 9999;
+    margin: 15px auto;
+    max-width: 400px;
+    min-width: 200px;
+    display: flex;
+    text-align: justify;
+    border: 1px solid rgba(0, 0, 0, 0.275);
+    padding: 10px;
+    background: #fff;
+    box-shadow: 4px 4px 8px #a78f8f;
+    animation: slide-in-left-to-right var(--speed, .8s) linear, slide-out-right-to-left var(--speed) linear var(--duration, 5s) forwards;
+    -webkit-animation: slide-in-left-to-right var(--speed, .8s) linear, slide-out-right-to-left var(--speed) linear var(--duration, 5s) forwards;
+}
+
+.toast+.toast {
+    margin-top: 20px;
+}
+
+.toast__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.toast__body {
+    padding: 0 20px;
+    flex: 1;
+}
+
+.toast_heading {
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.toast__message {
+    margin-top: 5px;
+}
+
+.toast__line {
+    height: 3px;
+    width: 100%;
+    margin: 10px 0 5px 0;
+    background: rgb(0, 30, 163);
+    animation: width-to-zero var(--duration, 5s) linear 0.8s forwards;
+    -webkit-animation: width-to-zero var(--duration, 5s) linear 0.8s forwards;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+}
+
+.toast__close>i {
+    font-size: 20px;
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.toast__close>i:hover {
+    opacity: 1;
+}
+
+.toast--success {
+    border-left: 5px solid var(--success-color);
+}
+
+.toast__icon--success {
+    color: var(--success-color);
+}
+
+
+.toast--warning {
+    border-left: 5px solid var(--warning-color);
+}
+
+.toast__icon--warning {
+    color: var(--warning-color);
+}
+
+.toast--error {
+    border-left: 5px solid var(--error-color);
+}
+
+.toast__icon--error {
+    color: var(--error-color);
+}
+
+.toast--info {
+    border-left: 5px solid var(--info-color);
+}
+
+.toast__icon--info {
+    color: var(--info-color);
+}
